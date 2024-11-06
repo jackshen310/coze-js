@@ -40,6 +40,7 @@ const client = new RealtimeClient({
   baseURL: "https://api.coze.cn",
   accessToken: "your_access_token",
   botId: "your_bot_id",
+  connectorId: '1024',                // required: Connector Id
   voiceId: "your_voice_id",           // Optional: Specify voice ID
   conversationId: "conversation_id",   // Optional: For conversation continuity
   debug: true,                        // Optional: Enable debug logging
