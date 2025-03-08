@@ -1,6 +1,6 @@
 import { useState, useRef } from 'react';
 
-import { useLoad } from '@tarojs/taro';
+import Taro, { useLoad } from '@tarojs/taro';
 import { View, Text, Button, Switch } from '@tarojs/components';
 import { CozeAPI, AbortController } from '@coze/taro-api';
 import { RoleType, ChatEventType } from '@coze/api';
@@ -89,9 +89,19 @@ export default function Index() {
     }
   };
 
+  const handleNavigateToWebSocket = () => {
+    Taro.navigateTo({
+      url: '/pages/websocket/index',
+    });
+  };
+
   return (
     <View className="index">
-      <View>
+      <Button type="primary" onClick={handleNavigateToWebSocket}>
+        前往 WebSocket 示例
+      </Button>
+
+      <View style={{ marginTop: '20px' }}>
         <Switch
           checked={streaming}
           onChange={evt => setStreaming(evt.detail.value)}
