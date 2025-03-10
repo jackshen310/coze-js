@@ -264,6 +264,9 @@ importers:
       '@babel/runtime':
         specifier: ^7.24.4
         version: 7.25.9
+      '@breezystack/lamejs':
+        specifier: 1.2.7
+        version: 1.2.7
       '@coze/api':
         specifier: workspace:*
         version: link:../../packages/coze-js
@@ -315,6 +318,9 @@ importers:
       '@tarojs/taro':
         specifier: 4.0.7
         version: 4.0.7(@tarojs/components@4.0.7(@tarojs/helper@4.0.7(@swc/helpers@0.5.15))(@types/react@18.3.12)(html-webpack-plugin@5.6.3(@rspack/core@1.1.1(@swc/helpers@0.5.15))(webpack@5.95.0(@swc/core@1.3.96(@swc/helpers@0.5.15))))(postcss@8.4.47)(react@18.3.1)(rollup@3.29.5)(vue@3.5.13(typescript@5.6.3))(webpack-chain@6.5.1)(webpack-dev-server@4.15.2(webpack@5.95.0(@swc/core@1.3.96(@swc/helpers@0.5.15))))(webpack@5.95.0(@swc/core@1.3.96(@swc/helpers@0.5.15))))(@tarojs/helper@4.0.7(@swc/helpers@0.5.15))(@tarojs/shared@4.0.7)(@types/react@18.3.12)(html-webpack-plugin@5.6.3(@rspack/core@1.1.1(@swc/helpers@0.5.15))(webpack@5.95.0(@swc/core@1.3.96(@swc/helpers@0.5.15))))(postcss@8.4.47)(rollup@3.29.5)(vue@3.5.13(typescript@5.6.3))(webpack-chain@6.5.1)(webpack-dev-server@4.15.2(webpack@5.95.0(@swc/core@1.3.96(@swc/helpers@0.5.15))))(webpack@5.95.0(@swc/core@1.3.96(@swc/helpers@0.5.15)))
+      base64-arraybuffer:
+        specifier: 1.0.2
+        version: 1.0.2
       react:
         specifier: ^18.3.1
         version: 18.3.1
@@ -2689,6 +2695,9 @@ packages:
 
   '@bcoe/v8-coverage@0.2.3':
     resolution: {integrity: sha512-0hYQ8SB4Db5zvZB4axdMHGwEaQjkZzFjQiN9LVYvIFB2nSUHW9tYpxWriPrWDASIxiaXax83REcLxuSdnGPZtw==}
+
+  '@breezystack/lamejs@1.2.7':
+    resolution: {integrity: sha512-6wc7ck65ctA75Hq7FYHTtTvGnYs6msgdxiSUICQ+A01nVOWg6rqouZB8IdyteRlfpYYiFovkf67dIeOgWIUzTA==}
 
   '@commitlint/types@17.8.1':
     resolution: {integrity: sha512-PXDQXkAmiMEG162Bqdh9ChML/GJZo6vU+7F03ALKDK8zYc6SuAr47LjG7hGYRqUOz+WK0dU7bQ0xzuqFMdxzeQ==}
@@ -6795,6 +6804,10 @@ packages:
 
   balanced-match@2.0.0:
     resolution: {integrity: sha512-1ugUSr8BHXRnK23KfuYS+gVMC3LB8QGH9W1iGtDPsNWoQbgtXSExkBu2aDR4epiGWZOjZsj6lDl/N/AqqTC3UA==}
+
+  base64-arraybuffer@1.0.2:
+    resolution: {integrity: sha512-I3yl4r9QB5ZRY3XuJVEPfc2XhZO6YweFPI+UovAzn+8/hb3oJ6lnysaFcjVpkCPfVWFUDvoZ8kmVDP7WyRtYtQ==}
+    engines: {node: '>= 0.6.0'}
 
   base64-js@1.5.1:
     resolution: {integrity: sha512-AKpaYlHn8t4SVbOHCy+b5+KKgvR4vrsD8vbvrbiQJps7fKDTkjkDry6ji0rUJjC0kzbNePLwzxq8iypo41qeWA==}
@@ -16023,6 +16036,8 @@ snapshots:
 
   '@bcoe/v8-coverage@0.2.3': {}
 
+  '@breezystack/lamejs@1.2.7': {}
+
   '@commitlint/types@17.8.1':
     dependencies:
       chalk: 4.1.2
@@ -21278,6 +21293,8 @@ snapshots:
   balanced-match@1.0.2: {}
 
   balanced-match@2.0.0: {}
+
+  base64-arraybuffer@1.0.2: {}
 
   base64-js@1.5.1: {}
 

@@ -18,6 +18,8 @@
   ],
   "dependencies": {
     "@babel/runtime": "^7.24.4",
+    "@breezystack/lamejs": "1.2.7",
+    "base64-arraybuffer":"1.0.2",
     "@coze/api": "workspace:*",
     "@coze/taro-api": "workspace:*",
     "@tarojs/components": "4.0.7",
