@@ -9,6 +9,12 @@ declare const chrome: any;
 
 import AgoraRTC from 'agora-rtc-sdk-ng';
 import { AIDenoiserExtension } from 'agora-extension-ai-denoiser';
+import { logger } from 'agora-rte-extension';
+
+// 禁用日志上传与打印日志
+AgoraRTC.disableLogUpload();
+AgoraRTC.setLogLevel(3);
+logger.setLogLevel(3);
 
 /**
  * Check audio device permissions

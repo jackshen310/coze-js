@@ -19,12 +19,8 @@ import {
   WebsocketsEventType,
 } from '../../index';
 import BaseWsChatClient from './base';
-import { getAudioDevices, setValueByPath } from '../utils';
+import { getAudioDevices, setValueByPath, isMobile } from '../utils';
 export { WsChatEventNames };
-
-function isMobileView() {
-  return window.innerWidth <= 768; // 通常移动端宽度 <= 768px
-}
 
 class WsChatClient extends BaseWsChatClient {
   public recorder: PcmRecorder;
@@ -36,11 +32,11 @@ class WsChatClient extends BaseWsChatClient {
   constructor(config: WsChatClientOptions) {
     super(config);
 
-    const isMobile = config.enableLocalLoopback ?? isMobileView();
+    const isMobilePlayer = config.enableLocalLoopback ?? isMobile();
 
     this.wavStreamPlayer = new WavStreamPlayer({
       sampleRate: 24000,
-      enableLocalLoopback: isMobile,
+      enableLocalLoopback: isMobilePlayer,
       volume: config.playbackVolumeDefault ?? 1,
       // firstFrameCallback: timestamp => {
       //   // this.ws?.send({
